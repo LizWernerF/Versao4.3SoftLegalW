@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="729.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui8.GeradorDeDocumentoController">
+   <children>
+      <ScrollPane>
+         <content>
+            <TabPane fx:id="tabPaneGeradorDoc" prefHeight="727.0" prefWidth="886.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab fx:id="tabDocAdm" text="Documentos administrativos">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="688.0" prefWidth="879.0" stylesheets="@styles.css">
+                           <children>
+                              <Label layoutX="55.0" layoutY="23.0" text="Cliente:" />
+                              <ComboBox fx:id="comboClientesDocAdm" layoutX="113.0" layoutY="18.0" prefHeight="31.0" prefWidth="700.0" />
+                              <ListView fx:id="listClientesDocAdm" layoutX="113.0" layoutY="63.0" prefHeight="92.0" prefWidth="702.0" />
+                              <Button fx:id="btnContratoIntNEPisoComDocAdm" layoutX="100.0" layoutY="456.0" mnemonicParsing="false" onAction="#gerarContratoIntNEPisoCom" text="Contrato Interníveis + NE + Piso com liminar" />
+                              <Button fx:id="btnContratoIntNEPisoSemDocAdm" layoutX="488.0" layoutY="456.0" mnemonicParsing="false" onAction="#gerarContratoIntNEPisoSem" text="Contrato Interníveis + NE + Piso sem liminar" />
+                              <Button fx:id="btnContratoIntNEDocAdm" layoutX="98.0" layoutY="356.0" mnemonicParsing="false" onAction="#gerarContratoIntNE" text="Contrato Interníveis + NE" />
+                              <Button fx:id="btnContratoIntPisoComDocAdm" layoutX="301.0" layoutY="310.0" mnemonicParsing="false" onAction="#gerarContratoIntPisoCom" stylesheets="@styles.css" text="Contrato Interníveis + Piso com liminar" />
+                              <Button fx:id="btnContratoIntPisoSemDocAdm" layoutX="308.0" layoutY="356.0" mnemonicParsing="false" onAction="#gerarContratoIntPisoSem" text="Contrato Interníveis + Piso sem liminar" />
+                              <Button fx:id="btnContratoIntDocAdm" layoutX="100.0" layoutY="310.0" mnemonicParsing="false" onAction="#gerarContratoInt" stylesheets="@styles.css" text="Contrato Interníveis" />
+                              <Button fx:id="btnContratoNEDocAdm" layoutX="370.0" layoutY="405.0" mnemonicParsing="false" onAction="#gerarContratoNE" text="Contrato Nova Escola" />
+                              <Button fx:id="btnContratoPisoComDocAdm" layoutX="612.0" layoutY="310.0" mnemonicParsing="false" onAction="#gerarContratoIntPisoCom" stylesheets="@styles.css" text="Contrato Piso com liminar" />
+                              <Button fx:id="btnContratoPisoSemDocAdm" layoutX="612.0" layoutY="356.0" mnemonicParsing="false" onAction="#gerarContratoPisoSem" text="Contrato Piso sem liminar" />
+                              <Button fx:id="btnContratoNEPisoComDocAdm" layoutX="100.0" layoutY="405.0" mnemonicParsing="false" onAction="#gerarContratoNEPisoCom" text="Contrato NE + Piso com liminar" />
+                              <Button fx:id="btnContratoNEPisoSemDocAdm" layoutX="576.0" layoutY="405.0" mnemonicParsing="false" onAction="#gerarContratoNEPisoSem" text="Contrato NE + Piso sem liminar" />
+                              <Button fx:id="btnDeclaracaoDocAdm" layoutX="342.0" layoutY="520.0" mnemonicParsing="false" onAction="#gerarDeclaracaoDocAdm" stylesheets="@styles.css" text="Declaração de Hipossuficiência" />
+                              <Button fx:id="btnProcInterDocAdm" layoutX="104.0" layoutY="576.0" mnemonicParsing="false" onAction="#gerarProcuracaoInterDocAdm" text="Procuração Interníveis" />
+                              <Button fx:id="btnProcNEDocAdm" layoutX="316.0" layoutY="576.0" mnemonicParsing="false" onAction="#gerarProcuracaoNEDocAdm" text="Procuração NE" />
+                              <Button fx:id="btnProcPisoDocAdm" layoutX="474.0" layoutY="576.0" mnemonicParsing="false" onAction="#gerarProcuracaoPisoDocAdm" text="Procuração Piso" />
+                              <Button fx:id="btnProcInterNEDocAdm" layoutX="377.0" layoutY="623.0" mnemonicParsing="false" onAction="#gerarProcuracaoInterNEDocAdm" text="Procuração Interníveis + NE" />
+                              <Button fx:id="btnProcInterPisoDocAdm" layoutX="595.0" layoutY="623.0" mnemonicParsing="false" onAction="#gerarProcuracaoInterPisoDocAdm" text="Procuração Interníveis + Piso" />
+                              <Button fx:id="btnProcInterNEPisoDocAdm" layoutX="104.0" layoutY="623.0" mnemonicParsing="false" onAction="#gerarProcuracaoInterNEPisoDocAdm" text="Procuração Interníveis + NE + Piso" />
+                              <Button fx:id="btnProcNEPisoDocAdm" layoutX="641.0" layoutY="576.0" mnemonicParsing="false" onAction="#gerarProcuracaoNEPisoDocAdm" text="Procuração NE + Piso" />
+                              <TextField fx:id="txtNomeDocAdm" layoutX="114.0" layoutY="170.0" prefHeight="31.0" prefWidth="702.0" promptText="Nome do cliente" />
+                              <TextField fx:id="txtNacionalidadeDocAdm" layoutX="114.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="nacionalidade" />
+                              <TextField fx:id="txtEstadoCivilDocAdm" layoutX="256.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="estado civil" />
+                              <TextField fx:id="txtProfissaoDocAdm" layoutX="397.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="profissão" />
+                              <TextField fx:id="txtRGDocAdm" layoutX="539.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="RG" />
+                              <TextField fx:id="txtCPFDocAdm" layoutX="680.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="CPF" />
+                              <TextField fx:id="txtIdFDocAdm" layoutX="114.0" layoutY="248.0" prefHeight="31.0" prefWidth="139.0" promptText="ID Funcional" />
+                              <TextField fx:id="txtEnderecoDocAdm" layoutX="256.0" layoutY="248.0" prefHeight="31.0" prefWidth="424.0" promptText="Endereço + cidade + Estado" />
+                              <TextField fx:id="txtCEPDocAdm" layoutX="680.0" layoutY="248.0" prefHeight="31.0" prefWidth="139.0" promptText="CEP" />
+                              <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="18.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Line endX="599.0" layoutX="129.0" layoutY="509.0" startX="96.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabPetIniciais" text="Petições Iniciais">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="960.0" stylesheets="@styles.css">
+                           <children>
+                              <Label layoutX="55.0" layoutY="23.0" text="Cliente:" />
+                              <ComboBox fx:id="comboClientesPetInicial" layoutX="113.0" layoutY="18.0" prefHeight="31.0" prefWidth="700.0" />
+                              <ListView fx:id="listClientesPetInicial" layoutX="113.0" layoutY="63.0" prefHeight="92.0" prefWidth="702.0" />
+                              <TextField fx:id="txtNomePetInicial" layoutX="114.0" layoutY="170.0" prefHeight="31.0" prefWidth="702.0" promptText="Nome do cliente" />
+                              <TextField fx:id="txtNacionalidadePetInicial" layoutX="114.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="nacionalidade" />
+                              <TextField fx:id="txtEstadoCivilPetInicial" layoutX="256.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="estado civil" />
+                              <TextField fx:id="txtProfissaoDPetInicial" layoutX="397.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="profissão" />
+                              <TextField fx:id="txtRGPetInicial" layoutX="539.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="RG" />
+                              <TextField fx:id="txtCPFPetInicial" layoutX="680.0" layoutY="208.0" prefHeight="31.0" prefWidth="139.0" promptText="CPF" />
+                              <TextField fx:id="txtIdFPetInicial" layoutX="114.0" layoutY="248.0" prefHeight="31.0" prefWidth="139.0" promptText="ID Funcional" />
+                              <TextField fx:id="txtEnderecoPetInicial" layoutX="256.0" layoutY="248.0" prefHeight="31.0" prefWidth="424.0" promptText="Endereço + cidade + Estado" />
+                              <TextField fx:id="txtCEPPetInicial" layoutX="680.0" layoutY="248.0" prefHeight="31.0" prefWidth="139.0" promptText="CEP" />
+                              <TextField fx:id="txtMatPetInicial" layoutX="114.0" layoutY="291.0" prefHeight="31.0" prefWidth="139.0" promptText="Matricula" />
+                              <TextField fx:id="txtRefPetInicial" layoutX="257.0" layoutY="291.0" prefHeight="31.0" prefWidth="88.0" promptText="Referência" />
+                              <TextField fx:id="txtCargoPetInicial" layoutX="349.0" layoutY="291.0" prefHeight="31.0" prefWidth="188.0" promptText="Cargo" />
+                              <TextField fx:id="txtCargaHPetInicial" layoutX="539.0" layoutY="291.0" prefHeight="31.0" prefWidth="139.0" promptText="Carga H" />
+                              <TextField fx:id="txtNivelPetInicial" layoutX="680.0" layoutY="291.0" prefHeight="31.0" prefWidth="139.0" promptText="Nivel" />
+                              <TextField fx:id="txtDataInicioPetInicial" layoutX="114.0" layoutY="329.0" prefHeight="31.0" prefWidth="139.0" promptText="Data de Início" />
+                              <TextField fx:id="txtDataaposentadoriaPetInicial" layoutX="256.0" layoutY="329.0" prefHeight="31.0" prefWidth="139.0" promptText="D. Aposentadoria" />
+                              <TextField fx:id="txtDataNascimentoPetInicial" layoutX="397.0" layoutY="329.0" prefHeight="31.0" prefWidth="139.0" promptText="D. Nascimento" />
+                              <TabPane layoutX="113.0" layoutY="387.0" prefHeight="285.0" prefWidth="707.0" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Interníveis">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Nova Escola">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Piso">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="18.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="txtTrienioPetInicial" layoutX="539.0" layoutY="329.0" prefHeight="31.0" prefWidth="141.0" promptText="Trienio" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabPetIntercorrentes" text="Petições intercorrentes">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="960.0" stylesheets="@styles.css">
+                           <children>
+                              <Label layoutX="55.0" layoutY="23.0" text="Cliente:" />
+                              <ComboBox fx:id="comboClientesPetInter" layoutX="113.0" layoutY="18.0" prefHeight="31.0" prefWidth="700.0" />
+                              <ListView fx:id="listClientesPetInter" layoutX="113.0" layoutY="63.0" prefHeight="92.0" prefWidth="702.0" />
+                              <TextField fx:id="txtNomePetInter" layoutX="114.0" layoutY="198.0" prefHeight="31.0" prefWidth="702.0" promptText="Nome do cliente" />
+                              <TextField fx:id="txtMatPetInter" layoutX="114.0" layoutY="238.0" prefHeight="31.0" prefWidth="139.0" promptText="Matricula" />
+                              <TextField fx:id="txtRefPetInter" layoutX="256.0" layoutY="238.0" prefHeight="31.0" prefWidth="88.0" promptText="Referência" />
+                              <TextField fx:id="txtCargoPetInter" layoutX="349.0" layoutY="238.0" prefHeight="31.0" prefWidth="188.0" promptText="Cargo" />
+                              <TextField fx:id="txtCargaHPetInter" layoutX="537.0" layoutY="238.0" prefHeight="31.0" prefWidth="139.0" promptText="Carga H" />
+                              <TextField fx:id="txtNivelPetInter" layoutX="676.0" layoutY="238.0" prefHeight="31.0" prefWidth="139.0" promptText="Nivel" />
+                              <TabPane layoutX="111.0" layoutY="311.0" prefHeight="352.0" prefWidth="707.0" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab text="Interníveis">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="707.0" />
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Nova Escola">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="btnPeticaoRespostaImpugnacaoERJNE" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#gerarPeticaoRespostaImpugnacaoERJNE" text="Resposta à Impugnação" />
+                                                <Button fx:id="btnEDsAvaliacaoAplicada" layoutX="12.0" layoutY="70.0" mnemonicParsing="false" onAction="#gerarPeticaoEDsAvaliacaoAplicada" text="Eds - Avaliação incorreta" />
+                                                <Button fx:id="btnPeticaoconcordandocalculoscontadorNE" layoutX="464.0" layoutY="70.0" mnemonicParsing="false" onAction="#gerarPeticaoConcordandoCalculosContadorNE" text="Concordando com calculos Contador" />
+                                                <Button fx:id="btnPeticaodescabimentoSuspensaoNE" layoutX="228.0" layoutY="70.0" mnemonicParsing="false" onAction="#gerarPeticaoDescabimentoSuspensaoNE" text="Resposta à pedido de suspensão" />
+                                                <Button fx:id="btnPeticaoSobreParametrosNE" layoutX="495.0" layoutY="14.0" mnemonicParsing="false" onAction="#gerarPeticaoSobreParametrosNE" text="Sobre parâmetros Calculo" />
+                                                <Button fx:id="btnPeticaoProvasNE" layoutX="282.0" layoutY="14.0" mnemonicParsing="false" onAction="#gerarPeticaoProvasNE" text="Sobre Provas" />
+                                             </children></AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Piso">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                              <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="18.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="txtNumeroProcInter" layoutX="114.0" layoutY="161.0" prefHeight="31.0" prefWidth="510.0" promptText="Número do Processo" />
+                              <TextField fx:id="txtTemaProcesso" layoutX="630.0" layoutY="161.0" prefHeight="30.0" promptText="Tema" />
+                              <TextField fx:id="txtVaraProcesso" layoutX="114.0" layoutY="274.0" prefHeight="31.0" prefWidth="141.0" promptText="Vara" />
+                              <TextField fx:id="txtComarcaProcesso" layoutX="257.0" layoutY="274.0" prefHeight="31.0" prefWidth="139.0" promptText="Comarca" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tabPetIntercorrentes1" text="Petições em Recurso">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="960.0" stylesheets="@styles.css">
+                           <children>
+                              <Label layoutX="91.0" layoutY="23.0" text="Cliente:" />
+                              <ComboBox layoutX="150.0" layoutY="16.0" prefHeight="31.0" prefWidth="586.0" />
+                              <ListView layoutX="149.0" layoutY="63.0" prefHeight="92.0" prefWidth="586.0" />
+                              <TextField layoutX="157.0" layoutY="193.0" prefHeight="26.0" prefWidth="570.0" promptText="Nome do cliente" />
+                              <TextField layoutX="159.0" layoutY="258.0" prefHeight="26.0" prefWidth="139.0" promptText="Tipo do Recurso" />
+                              <TextField layoutX="304.0" layoutY="258.0" prefHeight="26.0" prefWidth="88.0" promptText="Status" />
+                              <TextField layoutX="395.0" layoutY="258.0" prefHeight="26.0" prefWidth="188.0" promptText="Recorrido ou recorrente" />
+                              <TextField layoutX="587.0" layoutY="258.0" prefHeight="26.0" prefWidth="139.0" promptText="Câmara" />
+                              <TabPane layoutX="111.0" layoutY="332.0" prefHeight="352.0" prefWidth="707.0" stylesheets="@styles.css" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab text="Interníveis">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="707.0" />
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Nova Escola">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="btnPeticaoRespostaImpugnacaoERJNE1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#gerarPeticaoRespostaImpugnacaoERJNE" text="Resposta à Impugnação" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Piso">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                              <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="18.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField layoutX="159.0" layoutY="161.0" prefHeight="26.0" prefWidth="568.0" promptText="Número do Recurso" />
+                              <TextField layoutX="407.0" layoutY="294.0" prefHeight="26.0" promptText="Tema" />
+                              <TextField layoutX="158.0" layoutY="294.0" prefHeight="26.0" prefWidth="236.0" promptText="Relator(a)" />
+                              <TextField layoutX="157.0" layoutY="224.0" prefHeight="26.0" prefWidth="572.0" promptText="Processo Originário" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

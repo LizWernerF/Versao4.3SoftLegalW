@@ -1,0 +1,55 @@
+/* Defina a cor de fundo geral */
+.root {
+    -fx-font-family: "Plantagenet Cherokee";
+    -fx-font-size: 14;
+    -fx-base: white; /* Fundo branco */
+    -fx-control-inner-background: white; 
+}
+
+/* Estilo para botões com bordas arredondadas */
+.button {
+    -fx-background-color: none; /* Fundo branco */
+    -fx-border-color: #063564; /* Azul mais escuro que navy */
+    -fx-border-radius: 30; /* Borda arredondada */
+    -fx-background-radius: 30; /* Borda arredondada */
+    -fx-text-fill: #063564; /* Azul mais escuro que navy para o texto */
+    -fx-border-width: 2px; /* Aumenta a espessura da borda dos botões */
+	-fx-font-weight: bold; /* Letras em negrito */
+}
+
+.button:hover {
+    -fx-background-color: transparent; /* Fundo transparente */
+    -fx-border-color: transparent; /* Borda transparente */
+    -fx-background-radius: 30; /* Borda arredondada para o botão */
+    -fx-text-fill: #063564; /* Cor das letras em azul escuro */
+    -fx-font-weight: bold; /* Letras em negrito */
+}
+
+/* Estilo para o efeito de gradiente no hover */
+.button:hover:pressed {
+    -fx-background-color: linear-gradient(to bottom, rgba(224, 224, 224, 0.7), rgba(176, 176, 176, 0.7)); /* Gradiente com transparência */
+    -fx-border-color: transparent; /* Borda transparente */
+}
+
+/* Estilo para Labels com letras na mesma cor dos botões */
+.label {
+    -fx-text-fill: #063564; /* Azul mais escuro que navy para as letras */
+}
+
+/* Estilo para TextFields com bordas arredondadas */
+.text-field {
+    -fx-background-radius: 30; /* Borda arredondada */
+    -fx-border-width: 1px; /* Espessura da borda para TextFields */
+}
+
+/* Estilo para ComboBox com bordas arredondadas */
+.combo-box {
+    -fx-background-radius: 30; /* Borda arredondada */
+    -fx-border-width: 1px; /* Espessura da borda para ComboBoxes */
+}
+
+/* Estilo para ListView com bordas arredondadas */
+.list-view {
+    -fx-background-radius: 30; /* Borda arredondada */
+    -fx-border-width: 1px; /* Espessura da borda para ListViews */
+}

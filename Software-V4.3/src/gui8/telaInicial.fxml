@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1051.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui8.TelaInicialController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="1055.0" stylesheets="@styles.css">
+         <children>
+            <TabPane fx:id="tabPane" prefHeight="743.0" prefWidth="1033.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabIniciar">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="448.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="342.0" layoutY="260.0" text="Werner Advogados" textFill="#000000c2">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="42.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="416.0" layoutY="344.0" text="Bem Vindo" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="45.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="83.0" fitWidth="127.0" layoutX="484.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Iniciar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="498.0" layoutY="556.0" text="Começar" />
+                              <Button fx:id="btnIniciar" layoutX="466.0" layoutY="453.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="120.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabHome">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="439.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="326.0" layoutY="243.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="45.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="37.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="98.0" fitWidth="84.0" layoutX="218.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Consultar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="230.0" layoutY="489.0" text="Consultar" />
+                              <ImageView fitHeight="113.0" fitWidth="75.0" layoutX="741.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Cadastrar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="749.0" layoutY="489.0" text="Cadastrar" />
+                              <ImageView fitHeight="84.0" fitWidth="78.0" layoutX="479.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Gerar%20Documento.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="462.0" layoutY="587.0" text="Gerar Documento" />
+                              <Button fx:id="btnConsultar" layoutX="150.0" layoutY="388.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="219.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnCadastrar" layoutX="669.0" layoutY="388.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="219.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnTABPANEGerarDoc" layoutX="415.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnTABPANEGerarDoc" prefHeight="88.0" prefWidth="203.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnVoltar" layoutX="26.0" layoutY="26.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="52.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabCadastros">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="124.0" layoutX="432.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="306.0" layoutY="211.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="45.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="411.0" layoutY="279.0" text="Cadastrar" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="38.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="68.0" fitWidth="93.0" layoutX="142.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Cliente.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="134.0" layoutY="500.0" text="Novo Cliente" />
+                              <Label layoutX="432.0" layoutY="501.0" text="Novo Processo" />
+                              <Label layoutX="733.0" layoutY="502.0" text="Novo Recurso" />
+                              <ImageView fitHeight="88.0" fitWidth="73.0" layoutX="445.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Processo.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="95.0" layoutX="731.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Recurso.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="32.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar2" layoutX="21.0" layoutY="21.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="52.0" />
+                              <Button fx:id="btnNovocliente" layoutX="66.0" layoutY="389.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnNovoprocesso" layoutX="368.0" layoutY="390.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnNovoRecurso" layoutX="666.0" layoutY="391.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="220.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabCadastrosClientes">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="623.0" prefWidth="993.0">
+                           <children>
+                              <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="279.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelWernerADV" layoutX="428.0" layoutY="26.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelTituloCadCliente" layoutX="380.0" layoutY="58.0" text="Cadastrar - Novo Cliente" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelNome" layoutX="69.0" layoutY="103.0" text="Nome Completo: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNome" layoutX="200.0" layoutY="98.0" prefHeight="31.0" prefWidth="733.0" />
+                              <Label fx:id="labelTelefone" layoutX="124.0" layoutY="146.0" text="Telefone: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTelefone" layoutX="200.0" layoutY="141.0" prefHeight="31.0" prefWidth="203.0" />
+                              <Label fx:id="labelCpf" layoutX="414.0" layoutY="146.0" text="CPF: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCpf" layoutX="461.0" layoutY="141.0" prefHeight="31.0" prefWidth="213.0" />
+                              <Label fx:id="labelRg" layoutX="683.0" layoutY="146.0" text="RG: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtRg" layoutX="722.0" layoutY="141.0" prefHeight="31.0" prefWidth="211.0" />
+                              <Label fx:id="labelNacionalidade" layoutX="83.0" layoutY="191.0" text="Nacionalidade: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNacionalidade" layoutX="200.0" layoutY="186.0" prefHeight="31.0" prefWidth="163.0" />
+                              <Label fx:id="labelEstCivil" layoutX="380.0" layoutY="191.0" text="Estado Civil: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEstCivil" layoutX="474.0" layoutY="186.0" prefHeight="31.0" prefWidth="172.0" />
+                              <Label fx:id="labelProfissao" layoutX="663.0" layoutY="191.0" text="Profissão: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtProfissao" layoutX="747.0" layoutY="186.0" prefHeight="31.0" prefWidth="186.0" />
+                              <Label fx:id="labelIdFuncional" layoutX="101.0" layoutY="234.0" prefHeight="32.0" prefWidth="97.0" text="ID Funcional: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtIdFuncional" layoutX="200.0" layoutY="235.0" prefHeight="31.0" prefWidth="276.0" />
+                              <Label fx:id="labelDatanascimento" layoutX="523.0" layoutY="240.0" text="Data de Nascimento: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtDatanscimento" layoutX="681.0" layoutY="235.0" prefHeight="31.0" prefWidth="252.0" />
+                              <Label fx:id="labelEndereco" layoutX="122.0" layoutY="281.0" text="Endereço: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEndereco" layoutX="200.0" layoutY="276.0" prefHeight="31.0" prefWidth="733.0" />
+                              <Label fx:id="labelCidade" layoutX="131.0" layoutY="328.0" text="Cidade: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCidade" layoutX="200.0" layoutY="323.0" />
+                              <Label fx:id="labelEstado" layoutX="421.0" layoutY="328.0" text="Estado: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEstado" layoutX="477.0" layoutY="323.0" prefHeight="31.0" prefWidth="102.0" />
+                              <Label fx:id="labelCep" layoutX="621.0" layoutY="328.0" text="Código Postal: ">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCep" layoutX="747.0" layoutY="323.0" />
+                              <Line endX="873.0" layoutX="130.0" layoutY="371.0" startX="-100.0" />
+                              <Label fx:id="labelMat1" layoutX="34.0" layoutY="391.0" text="Matrícula 01: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtMat1" layoutX="142.0" layoutY="386.0" />
+                              <Label fx:id="labelRef1" layoutX="348.0" layoutY="391.0" text="Referência:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxRef1" layoutX="432.0" layoutY="386.0" prefHeight="31.0" prefWidth="57.0" />
+                              <Label fx:id="labelCargH1" layoutX="516.0" layoutY="391.0" text="Carga Horária:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxCargH1" layoutX="627.0" layoutY="386.0" prefHeight="31.0" prefWidth="56.0" />
+                              <Label fx:id="labelDataInicio1" layoutX="703.0" layoutY="391.0" text="Data de início:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="DataInicio1" layoutX="808.0" layoutY="386.0" />
+                              <Label fx:id="labelCargo1" layoutX="78.0" layoutY="433.0" text="Cargo:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCargo" layoutX="141.0" layoutY="428.0" prefHeight="31.0" prefWidth="329.0" />
+                              <Label fx:id="labelNivelatual1" layoutX="484.0" layoutY="433.0" text="Nivel atual:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxNivelatual1" layoutX="568.0" layoutY="428.0" prefHeight="31.0" prefWidth="46.0" />
+                              <Label fx:id="labelTrienioatual1" layoutX="624.0" layoutY="433.0" text="Triênio Atual: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTrienioatual1" layoutX="737.0" layoutY="428.0" />
+                              <Label layoutX="38.0" layoutY="479.0" text="Se Aposentado:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labeldataaposentadoria1" layoutX="163.0" layoutY="479.0" text="Data da aposentadoria:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtdataaposentadoria1" layoutX="328.0" layoutY="474.0" />
+                              <Line endX="877.0" layoutX="135.0" layoutY="519.0" startX="-100.0" />
+                              <Label fx:id="labelpossui2aMat" layoutX="28.0" layoutY="525.0" text="Se possuir 2ª matrícula:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelMat2" layoutX="30.0" layoutY="571.0" text="Matrícula 02: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtMat2" layoutX="138.0" layoutY="566.0" />
+                              <Label fx:id="labelRef12" layoutX="348.0" layoutY="571.0" text="Referência:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxRef2" layoutX="438.0" layoutY="566.0" prefHeight="31.0" prefWidth="57.0" />
+                              <Label fx:id="labelCargH2" layoutX="514.0" layoutY="571.0" text="Carga Horária:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxCargh2" layoutX="627.0" layoutY="566.0" prefHeight="31.0" prefWidth="57.0" />
+                              <Label fx:id="labelDataInicio2" layoutX="703.0" layoutY="571.0" text="Data de início:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="datainicio2" layoutX="815.0" layoutY="566.0" />
+                              <Label fx:id="labelCargo2" layoutX="78.0" layoutY="622.0" text="Cargo:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCargo2" layoutX="140.0" layoutY="617.0" prefHeight="31.0" prefWidth="307.0" />
+                              <Label fx:id="labelNivelatual2" layoutX="457.0" layoutY="622.0" text="Nivel atual:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BoxNivelatual2" layoutX="549.0" layoutY="617.0" prefHeight="31.0" prefWidth="46.0" />
+                              <Label fx:id="labelTrienioatual2" layoutX="624.0" layoutY="622.0" text="Triênio Atual: ">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTrienioatual2" layoutX="737.0" layoutY="617.0" />
+                              <Label layoutX="31.0" layoutY="660.0" text="Se Aposentado:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelDataaposentadoria2" layoutX="154.0" layoutY="660.0" text="Data da aposentadoria:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtDataaposentadoria2" layoutX="326.0" layoutY="655.0" />
+                              <Button fx:id="btnNovoCadastroCliente" layoutX="903.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBtnLimparTelaCadastroCliente" text="Novo cadastro" />
+                              <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="25.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="52.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Button>
+                              <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="555.0" layoutY="663.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/BotaoCadastro.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnCadastrarCliente" layoutX="540.0" layoutY="658.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="156.0" text="       Cadastrar">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabCadastrosProcessos">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="252.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelWernerADV1" layoutX="409.0" layoutY="45.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelTituloCadCliente1" layoutX="351.0" layoutY="79.0" text="Cadastrar - Novo Processo" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="150.0" layoutY="436.0" text="Cliente: " />
+                              <Label layoutX="150.0" layoutY="230.0" text="Cliente: " />
+                              <TextField fx:id="txtNumeroProcesso" layoutX="223.0" layoutY="160.0" prefHeight="31.0" prefWidth="715.0" promptText="Informe o número do processo">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="buscarNome" layoutX="223.0" layoutY="225.0" prefHeight="31.0" prefWidth="578.0" promptText="Digite aqui o nome">
+                                 <font>
+                                    <Font name="System Italic" size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="57.0" layoutY="165.0" text="Número do Processo: " />
+                              <Label layoutX="64.0" layoutY="482.0" text="Comarca: " />
+                              <TextField fx:id="txtComarca" layoutX="142.0" layoutY="477.0" prefHeight="31.0" prefWidth="338.0" promptText="Informe a Comarca">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="550.0" layoutY="482.0" text="Vara: " />
+                              <TextField fx:id="txtVara" layoutX="603.0" layoutY="478.0" prefHeight="29.0" prefWidth="338.0" promptText="Informe a Vara">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="84.0" layoutY="527.0" text="Tema: " />
+                              <TextField fx:id="txtTema" layoutX="144.0" layoutY="522.0" prefHeight="31.0" prefWidth="245.0" promptText="Informe: Interníveis, Nova Escola ou Piso">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="403.0" layoutY="528.0" text="Valor da Causa: " />
+                              <TextField fx:id="txtValorCausa" layoutX="524.0" layoutY="523.0" prefHeight="29.0" prefWidth="174.0" promptText="Insira o valor pretendido">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="710.0" layoutY="528.0" text="Percentual honorários: " />
+                              <TextField fx:id="txtValorHonorarios" layoutX="878.0" layoutY="523.0" prefHeight="29.0" prefWidth="125.0" promptText="Insira o percentual">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="82.0" layoutY="580.0" text="Status:" />
+                              <TextField fx:id="txtStatusProc" layoutX="142.0" layoutY="575.0" promptText="Insira o Status" />
+                              <Label layoutX="351.0" layoutY="580.0" text="Matrícula:" />
+                              <TextField fx:id="txtMatriculaProc" layoutX="427.0" layoutY="575.0" promptText="Insira a Matricula" />
+                              <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="23.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="835.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Busca.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar31" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="52.0" />
+                              <Button fx:id="btnBuscarClientes" layoutX="825.0" layoutY="219.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="48.0" />
+                              <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="877.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/BotaoCadastro.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnCadastrarprocesso" layoutX="864.0" layoutY="666.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text="     Cadastrar" />
+                              <Label fx:id="labelNomeClienteCadastroProc" layoutX="212.0" layoutY="436.0" prefHeight="20.0" prefWidth="595.0" />
+                              <ListView fx:id="listResultadoListView" layoutX="225.0" layoutY="262.0" prefHeight="164.0" prefWidth="581.0" />
+                              <Label fx:id="labelMat1CadProc" layoutX="844.0" layoutY="312.0" prefHeight="20.0" prefWidth="113.0" />
+                              <Label fx:id="labelMat2CadProc" layoutX="838.0" layoutY="363.0" prefHeight="20.0" prefWidth="126.0" />
+                              <Label layoutX="861.0" layoutY="291.0" text="Matrícula 1:" />
+                              <Label layoutX="864.0" layoutY="334.0" text="Matrícula 2:" />
+                              <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="917.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Limpar.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnLimparTela" layoutX="905.0" layoutY="45.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabCadastrosRecursos">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="1033.0">
+                           <children>
+                              <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="252.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelWernerADV2" layoutX="409.0" layoutY="45.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelTituloCadCliente2" layoutX="356.0" layoutY="79.0" text="Cadastrar - Novo Recurso" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="163.0" layoutY="179.0" text="Busca:" />
+                              <TextField fx:id="txtnumerorecurso" layoutX="220.0" layoutY="130.0" prefHeight="31.0" prefWidth="716.0" promptText="Informe o número do recurso">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="buscarNomeRec" layoutX="227.0" layoutY="173.0" prefHeight="31.0" prefWidth="578.0" promptText="Digite aqui o nome">
+                                 <font>
+                                    <Font name="System Italic" size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="85.0" layoutY="365.0" text="Processo: originário:" />
+                              <Label layoutX="74.0" layoutY="135.0" text="Número do Recurso:" />
+                              <Label layoutX="106.0" layoutY="409.0" text="Tipo de recurso:" />
+                              <TextField fx:id="txtTiporecurso" layoutX="234.0" layoutY="405.0" prefHeight="29.0" prefWidth="382.0" promptText="Informe o tipo de recurso ex: Agravo de instrumento, Apelação...">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="637.0" layoutY="409.0" text="Recorrido ou recorrente:" />
+                              <TextField fx:id="txtRecorridorecorrente" layoutX="819.0" layoutY="405.0" prefHeight="29.0" prefWidth="174.0" promptText="Informe aqui">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="160.0" layoutY="469.0" text="Status: " />
+                              <TextField fx:id="txtStatus" layoutX="234.0" layoutY="464.0" />
+                              <Label layoutX="448.0" layoutY="469.0" text="Órgão Julgador:" />
+                              <TextField fx:id="txtJulgador" layoutX="564.0" layoutY="464.0" prefHeight="31.0" prefWidth="257.0" />
+                              <Label layoutX="138.0" layoutY="530.0" text="Relator(a): " />
+                              <TextField fx:id="txtRelator" layoutX="234.0" layoutY="525.0" prefHeight="31.0" prefWidth="334.0" />
+                              <Button fx:id="btnLimparTelaRec" layoutX="916.0" layoutY="41.0" mnemonicParsing="false" text="Limpar" />
+                              <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="21.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="30.0" layoutX="823.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Busca.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar32" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="44.0" />
+                              <Button fx:id="btnBuscarClientes1" layoutX="812.0" layoutY="174.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="51.0" />
+                              <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="468.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/BotaoCadastro.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnCadastrarrecurso" layoutX="456.0" layoutY="594.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="121.0" text="      Cadastrar" />
+                              <Label fx:id="labelNomeDoClienteCadRec" layoutX="230.0" layoutY="334.0" prefHeight="20.0" prefWidth="580.0" />
+                              <Label fx:id="labelNumeroProcCadRec" layoutX="229.0" layoutY="365.0" prefHeight="20.0" prefWidth="582.0" />
+                              <ListView fx:id="listResultadoListViewCadRec" layoutX="227.0" layoutY="211.0" prefHeight="112.0" prefWidth="580.0" />
+                              <Label layoutX="160.0" layoutY="334.0" text="Cliente:" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabConsultar">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="439.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="326.0" layoutY="195.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="45.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="432.0" layoutY="252.0" text="Consultar" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="38.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnNovoprocesso1" layoutX="612.0" layoutY="378.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="192.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="290.0" layoutY="569.0" mnemonicParsing="false" text="Buscas">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></Button>
+                              <Label layoutX="281.0" layoutY="305.0" text="Clientes">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="653.0" layoutY="305.0" text="Processos">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnTabBuscas" layoutX="672.0" layoutY="569.0" mnemonicParsing="false" text="Buscas">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="22.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar21" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="46.0" />
+                              <ImageView fitHeight="92.0" fitWidth="86.0" layoutX="284.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/ConsultarEditarCliente.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnNovocliente1" layoutX="239.0" layoutY="378.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="175.0">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="274.0" layoutY="484.0" text="Consultar | Editar" />
+                              <ImageView fitHeight="92.0" fitWidth="86.0" layoutX="666.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/ConsultarEditar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="656.0" layoutY="484.0" text="Consultar | Editar" />
+                              <Line endX="-100.0" endY="214.0" layoutX="617.0" layoutY="354.0" startX="-100.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="TabBuscas" text="Busca">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TabPane layoutX="72.0" layoutY="109.0" prefHeight="532.0" prefWidth="890.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Nome">
+                                    <content>
+                                          <ScrollPane prefHeight="540.0" prefWidth="890.0">
+                                             <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="892.0">
+                                                   <children>
+                                                      <Label layoutX="66.0" layoutY="62.0" text="Nome:" />
+                                                      <TextField fx:id="txtBuscaPorNomeTabBuscaProcNome" layoutX="120.0" layoutY="57.0" prefHeight="31.0" prefWidth="661.0" />
+                                                      <ListView fx:id="listResultadosNumerosTabBuscaProcNome" layoutX="120.0" layoutY="103.0" prefHeight="200.0" prefWidth="661.0" />
+                                                      <Button layoutX="795.0" layoutY="57.0" mnemonicParsing="false" text="Busca" />
+                                                      <Label fx:id="labelNomeTabBuscaProcNome" layoutX="120.0" layoutY="315.0" prefHeight="21.0" prefWidth="660.0" />
+                                                      <Label fx:id="labelNumeroTabBuscaProcNome" layoutX="120.0" layoutY="344.0" prefHeight="21.0" prefWidth="555.0" />
+                                                      <Label fx:id="labelComarcaTabBuscaProcNome" layoutX="118.0" layoutY="377.0" prefHeight="21.0" prefWidth="280.0" />
+                                                      <Label fx:id="labelVaraTabBuscaProcNome" layoutX="411.0" layoutY="377.0" prefHeight="21.0" prefWidth="362.0" text="Vara" />
+                                                      <Label fx:id="labelTemaTabBuscaProcNome" layoutX="118.0" layoutY="412.0" prefHeight="21.0" prefWidth="281.0" text="Tema" />
+                                                      <Label fx:id="labelValorTabBuscaProcNome" layoutX="409.0" layoutY="412.0" prefHeight="21.0" prefWidth="281.0" text="Valor" />
+                                                      <Label fx:id="labelHonorariosTabBuscaProcNome" layoutX="696.0" layoutY="412.0" prefHeight="21.0" prefWidth="129.0" text="Honorários" />
+                                                      <Label fx:id="labelAndamentoTabBuscaProcNome" layoutX="119.0" layoutY="452.0" prefHeight="21.0" prefWidth="664.0" text="UltimoAndamento" />
+                                                      <Label fx:id="labelStatusTabBuscaProcNome" layoutX="690.0" layoutY="344.0" prefHeight="21.0" prefWidth="122.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Numero">
+                                       <content>
+                                          <ScrollPane prefHeight="540.0" prefWidth="890.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="892.0">
+                                                   <children>
+                                                      <Label layoutX="60.0" layoutY="62.0" text="Numero:" />
+                                                      <TextField layoutX="120.0" layoutY="57.0" prefHeight="31.0" prefWidth="661.0" />
+                                                      <ListView layoutX="120.0" layoutY="103.0" prefHeight="200.0" prefWidth="661.0" />
+                                                      <Button layoutX="795.0" layoutY="57.0" mnemonicParsing="false" text="Busca" />
+                                                      <Label layoutX="120.0" layoutY="315.0" text="Nome" />
+                                                      <Label layoutX="120.0" layoutY="344.0" text="Numero" />
+                                                      <Label layoutX="118.0" layoutY="377.0" text="Comarca" />
+                                                      <Label layoutX="411.0" layoutY="377.0" text="Vara" />
+                                                      <Label layoutX="118.0" layoutY="412.0" text="Tema" />
+                                                      <Label layoutX="409.0" layoutY="412.0" text="Valor" />
+                                                      <Label layoutX="696.0" layoutY="412.0" text="Honorários" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Comarca">
+                                       <content>
+                                          <ScrollPane prefHeight="540.0" prefWidth="890.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="892.0">
+                                                   <children>
+                                                      <Label layoutX="48.0" layoutY="62.0" text="Comarca:" />
+                                                      <TextField layoutX="120.0" layoutY="57.0" prefHeight="31.0" prefWidth="661.0" />
+                                                      <ListView layoutX="120.0" layoutY="103.0" prefHeight="200.0" prefWidth="661.0" />
+                                                      <Button layoutX="795.0" layoutY="57.0" mnemonicParsing="false" text="Busca" />
+                                                      <Label layoutX="120.0" layoutY="315.0" text="Nome" />
+                                                      <Label layoutX="120.0" layoutY="344.0" text="Numero" />
+                                                      <Label layoutX="118.0" layoutY="377.0" text="Comarca" />
+                                                      <Label layoutX="411.0" layoutY="377.0" text="Vara" />
+                                                      <Label layoutX="118.0" layoutY="412.0" text="Tema" />
+                                                      <Label layoutX="409.0" layoutY="412.0" text="Valor" />
+                                                      <Label layoutX="696.0" layoutY="412.0" text="Honorários" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Vara">
+                                       <content>
+                                          <ScrollPane prefHeight="540.0" prefWidth="890.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="892.0">
+                                                   <children>
+                                                      <Label layoutX="66.0" layoutY="62.0" text="Vara:" />
+                                                      <TextField layoutX="120.0" layoutY="57.0" prefHeight="31.0" prefWidth="661.0" />
+                                                      <ListView layoutX="120.0" layoutY="103.0" prefHeight="200.0" prefWidth="661.0" />
+                                                      <Button layoutX="795.0" layoutY="57.0" mnemonicParsing="false" text="Busca" />
+                                                      <Label layoutX="120.0" layoutY="315.0" text="Nome" />
+                                                      <Label layoutX="120.0" layoutY="344.0" text="Numero" />
+                                                      <Label layoutX="118.0" layoutY="377.0" text="Comarca" />
+                                                      <Label layoutX="411.0" layoutY="377.0" text="Vara" />
+                                                      <Label layoutX="118.0" layoutY="412.0" text="Tema" />
+                                                      <Label layoutX="409.0" layoutY="412.0" text="Valor" />
+                                                      <Label layoutX="696.0" layoutY="412.0" text="Honorários" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="Tema">
+                                       <content>
+                                          <ScrollPane prefHeight="540.0" prefWidth="890.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="892.0">
+                                                   <children>
+                                                      <Label layoutX="66.0" layoutY="62.0" text="Tema:" />
+                                                      <TextField layoutX="120.0" layoutY="57.0" prefHeight="31.0" prefWidth="661.0" />
+                                                      <ListView layoutX="120.0" layoutY="103.0" prefHeight="200.0" prefWidth="661.0" />
+                                                      <Button layoutX="795.0" layoutY="57.0" mnemonicParsing="false" text="Busca" />
+                                                      <Label layoutX="120.0" layoutY="315.0" text="Nome" />
+                                                      <Label layoutX="120.0" layoutY="344.0" text="Numero" />
+                                                      <Label layoutX="118.0" layoutY="377.0" text="Comarca" />
+                                                      <Label layoutX="411.0" layoutY="377.0" text="Vara" />
+                                                      <Label layoutX="118.0" layoutY="412.0" text="Tema" />
+                                                      <Label layoutX="409.0" layoutY="412.0" text="Valor" />
+                                                      <Label layoutX="696.0" layoutY="412.0" text="Honorários" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                              <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="361.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelWernerADV21" layoutX="446.0" layoutY="35.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="26.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="34.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/Voltar.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnVoltar34" layoutX="25.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="51.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Untitled Tab">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="111.0" layoutX="207.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagens/LOGO.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="326.0" layoutY="28.0" text="Werner Advogados" textFill="#000000ba">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="45.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="184.0" layoutY="148.0" text="Pesquisa:" />
+                              <TextField layoutX="267.0" layoutY="143.0" prefHeight="31.0" prefWidth="500.0" />
+                              <Button layoutX="797.0" layoutY="143.0" mnemonicParsing="false" text="Buscar" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
